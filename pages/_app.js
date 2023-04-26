@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
               })
               .catch((err) => {
                 console.warn({ err });
-              }
+              })
 
           } else {
             setLiffState([liff, null]);
