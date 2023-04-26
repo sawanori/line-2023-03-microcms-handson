@@ -102,18 +102,6 @@ export default function Home({ _staffs, serviceDomain, apiKey }) {
             </ListItem>
           ))}
         </List>
-        <Button
-          variant="contained"
-          onClick={() => {
-            const staff = createRandomStaff()
-            createStaff(microcmsClient, (res) => {
-              setStaff([{ id: res.id, ...staff }, ...staffs])
-            }, staff);
-            setSnackMessage(`${staff.staffName}を追加しました`)
-          }}
-        >
-          ハンズオン用にmicroCMS上に新規スタッフ作成
-        </Button>
       </Container>
 
       <Container>
