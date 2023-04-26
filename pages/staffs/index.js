@@ -65,6 +65,7 @@ export default function Staff({ serviceDomain, microcmsApiKey }) {
         <title>{staff.staffName}</title>
       </Head>
       <article>
+      
         <TableContainer sx={{ maxHeight: 500 }}>
           <Table stickyHeader aria-label="sticky table">
             <TableHead>
